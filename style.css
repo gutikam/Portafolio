@@ -2,9 +2,8 @@
     margin: 0;
 }
 
-
 #particles-js {
-    background: #157251;
+    background: #000000;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -12,6 +11,124 @@
     top: 0;
 }
 
-#contenido{
-    z-index: 5;
+body {
+    color: rgb(0, 0, 0);
 }
+
+header {
+    background-color: rgb(123, 123, 123);
+    padding: 10px;
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; 
+
+}
+
+#fila {
+    display: flex;
+    margin-left: 900px;
+}
+
+#casilla {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#casilla i {
+    font-size: 1.5em;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+#casilla i:hover {
+    font-size: 2em; 
+    color: rgb(255, 255, 255);
+}
+
+#container {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 100px;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+}
+
+#information {
+    background-color: rgba(36, 30, 74);
+    width: 500px;
+    height: 440px;
+    position: absolute;
+    grid-column: 1;
+    margin-top: 30px;
+    margin-left: 30px;
+    transition: transform 1s ease;
+    border-radius: 10px;
+}
+
+#hr-1{
+    border-radius: 100px;
+    width: 1347px;
+    position: absolute;
+    top: 950px;
+}
+
+#certificados {
+    background-color: rgba(36, 30, 74, 0.3);
+    position: relative;
+    width: 100%;
+    height: 500px;
+    top: 700px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 20px; /* Espacio entre los certificados */
+    align-items: center;
+    justify-content: center;
+}
+
+.certi {
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certi1 {
+    background-image: url('certificado1.png');
+    position: relative;
+    bottom: 150px;
+    left: 30px;
+}
+
+.certi2 {
+    background-image: url('certificado2.png');
+}
+
+.certi:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.certi-link {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+}
+
+
+#hr-2{
+    background-color: blue;
+    border-radius: 100px;
+    width: 1347px;
+    position: absolute;
+    top: 1300px;
+}
+
